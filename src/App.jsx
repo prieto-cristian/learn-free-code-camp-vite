@@ -5,12 +5,20 @@ import './App.css'
 
 const Title = () =>{
   return <div>
-    hello world!
+    Hello World!
   </div>
 }
-
+const Descripcion = () => {
+  return <div>
+    Este es mi segundo componente de REACT
+  </div>
+}
 const App = () => {
   return <div>
+    <Title />
+    <Title />
+    <Title />
+    <Descripcion />
     todo
   </div>;
 };

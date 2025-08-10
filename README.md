@@ -1,12 +1,24 @@
-# React + Vite
+# Apuntes - React + Tailwind CSS [2025]
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Material de estudio
 
-Currently, two official plugins are available:
+- YOUTUBE: [React Course for Beginners w/ Tailwind CSS [2025]](https://www.youtube.com/watch?v=IJ85kCdqWao)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Componentes
 
-## Expanding the ESLint configuration
+- Un componente en React es una funcion JavaScript.
+- Los nombres de los componentes deben comenzar con mayusculas.
+- Cuando se quiere hacer uso de un componente se especifica el nombre del componente como si fuera un elemento HTML. Ejemplo: ```<App />```, ```<Title />```, ```<MiComponente />```.
+- Al ser funciones de javascript, los componentes se pueden escribir o aparecer de distintas formas: ```const Title = () => {return ...}``` o ```function Title (){return ...}```
+- Como son funciones JS podemos ejecutar codigo hasta llegar al return.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Renderizado de Componentes
+
+- Los componentes se pueden renderizar en main.jsx o bien dentro de otros componentes.
+- Cuando se renderiza dentro de main.jsx se utiliza el metodo ```createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)```
+- Cuando un componente se renderiza dentro de otro, solo basta con invocarlo. Ej: ```return<div><Title />todo</div>;```
+- Para renderizar varias veces un componentes basta con invocarlo varias veces. ```<Title /> <Title /><Title />```
